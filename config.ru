@@ -1,2 +1,2 @@
-require 'referals'
+require './referals'
 run Sinatra::Application
