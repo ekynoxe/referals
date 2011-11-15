@@ -1,0 +1,5 @@
+ga_code: "XX-00000000-1"
+redirects:
+    googl: "http://google.com" # will redirect to http://google.com if garu accessed with http://server.com/googl
+    yhoo: "http://yahoo.com" # will redirect to http://yahoo.com if garu accessed with http://server.com/yhoo
+default_redirect: "http://github.com"

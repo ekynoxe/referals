@@ -1,0 +1,47 @@
+= Referals =
+
+Referals is a simple sinatra application that 
+enables you to track page visits on google
+analytics through your server, not javascript
+
+Technically, it listens for incoming connections,
+send a request to google analytics with your
+account code, then if a redirect url is found
+in the configuration, redirects the client to it.
+
+This code is based on garu, my port of the goole
+analytics for mobile PHP script in a ruby gem
+
+== INSTALLATION ==
+
+Download, clone, copy/paste are all methods you
+can use.
+
+	git clone git@github.com:ekynoxe/referals.git
+	cd refereals
+
+== CONFIGURATION ==
+
+Referal uses a yaml settings file to store your
+google analytics account and redirect urls
+corresponding to a path in the url. Check the
+sample settings.yml file for an example
+
+== RUNNING ==
+
+* Make sure you've got sinatra and garu installed:
+
+	gem install sinatra
+	gem install garu (garu lives on github at https://github.com/ekynoxe/garu)
+
+* Run!
+
+	ruby referals.rb
+
+== CREDITS ==
+
+Google mobile code at
+http://code.google.com/mobile/analytics/docs/web/index.html
+
+Mathieu Davy - ekynoxe.com
+matt@ekynoxe.com
